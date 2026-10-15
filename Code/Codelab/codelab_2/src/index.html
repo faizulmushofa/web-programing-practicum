@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portofolio</title>
+    <link rel="stylesheet" href="../dist/output.css">
+
+</head>
+
+<body class="font-poppins">
+    <header class="bg-primary text-white px-6 py-4 relative">
+        <nav class="flex justify-between items-center">
+            <h1 id="mywebsite" class="font-bold">MyWebsite</h1>
+            <button id="menu-toggle" class="md:hidden flex flex-col gap-1">
+                <span class="block w-6 h-0.5 bg-white"></span>
+                <span class="block w-6 h-0.5 bg-white"></span>
+                <span class="block w-6 h-0.5 bg-white"></span>
+            </button>
+            <ul id="nav-menu" class="hidden md:flex gap-6">
+                <li><a href="#home" class="font-bold underline">Home</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./pages/contact.html">contact</a></li>
+                <li><a href="./pages/pokemon.html">Pokemon</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="bg-background text-center py-20 px-6">
+        <h1 id="home" class="text-4xl font-bold mb-4">
+            Learn Tailwind Css
+        </h1>
+        <p class="mb-6 text-muted">
+            Create a Website
+        </p>
+        <Button class="bg-primary-dark text-white px-4 py-2 rounded  hover:shadow-lg transition-shadow">
+            <a href="https://tailwindcss.com/docs/installation/using-vite">Start Now</a>
+        </Button>
+    </section>
+
+    <section class="px-6 py-10">
+        <h2 class="text-2xl font-bold text-center mb-4">
+            About Us
+        </h2>
+
+        <p class="text-muted text-center leading-relaxed">
+            We Provide Modern Web Learning Using Tailwind Css
+        </p>
+    </section>
+
+    <section id="about" class="grid grid-cols-3 gap-6 px-10 py-10 ">
+
+        <div class="bg-surface rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <img src="./assets/images/web-development.jpeg" alt="Web Development" class="w-full h-48 object-cover">
+
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">
+                    Web Development
+                </h3>
+
+                <p class="text-muted leading-relaxed">
+                    Learn the fundamentals of modern web development, starting with
+                    HTML, CSS, and responsive design. Build a strong foundation for
+                    creating structured, accessible, and user-friendly websites.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="bg-surface rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <img src="./assets/images/progamming.jpeg" alt="Programming" class="w-full h-48 object-cover">
+
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">
+                    Programming
+                </h3>
+
+                <p class="text-muted leading-relaxed">
+                    Develop your programming skills by understanding basic concepts
+                    such as variables, functions, control flow, data structures,
+                    and problem-solving. Practice writing clean and logical code
+                    through hands-on exercises.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="bg-surface rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <img src="./assets/images/build-project.jpeg" alt="Build Projects" class="w-full h-48 object-cover">
+
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">
+                    Build Projects
+                </h3>
+
+                <p class="text-muted leading-relaxed">
+                    Turn your knowledge into practical projects and gain experience
+                    by solving real-world problems. Building projects helps you
+                    understand how different technologies work together while
+                    creating a portfolio that demonstrates your skills.
+                </p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="px-6 py-9">
+        <form id="contact-form" class="flex-row bg-white p-6 rounded shadow max-w-md mx-auto hover:shadow-lg transition-shadow">
+            <input id="input-nama" type="text" placeholder="Nama" class="border p-2 w-full mb-1 rounded">
+            <p id="error-nama" class="hidden text-red-500 text-sm mb-3">Nama tidak boleh kosong.</p>
+            <button type="submit" class="bg-primary-dark text-white rounded w-full py-2 mt-3">Send Now</button>
+        </form>
+    </section>
+
+    <footer class="bg-footer text-white text-center py-4">
+        Copyright 2026
+    </footer>
+</body>
+
+<script src="./scripts/script.js"></script>
+
+</html>
