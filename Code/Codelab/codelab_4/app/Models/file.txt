@@ -1,0 +1,34 @@
+
+
+frontend (aplikasi 1)<------- API(application programming interface) --------> backend (aplikasi 2)
+
+
+
+rules/prosedur:
+apa yang bisa minta/ Request DTO
+apa yang bisa di kasih / Resources
+
+
+sistem perpustakaan (backend)
+
+Papan Layanan (Route)
+
+petugas perpustakaan/pustakawan(controller) konsep CRUD(Create,Read,Upadate,Delete)
+- Pinjam buku
+- nambahin buku lemari
+
+petugas gudang(Models)
+- data buku
+- data membership
+- data privacy
+
+Denah Rak Gudang(Migrations) 
+
+Rak Gudang (Database)
+
+              | Server
+Client ---- Request ----> Controller -----> Models ------> Migrations ----> Database
+
+Client <---- Resource ---- Controller <----- Models <------ Migrations <---- Database
+
+

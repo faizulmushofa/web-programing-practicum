@@ -1,0 +1,116 @@
+user{
+    id
+    nama
+    kelas
+    daerah
+    no hp * privacy
+    email
+    password * privacy
+}
+
+ data {
+    id
+    nama
+    kelas
+    token 
+}
+
+
+login(client) -> interceptor -> data(backend)
+
+login(client) <- interceptor <- data(backend)
+
+
+login -> user
+
+DTO (data transfer object) = 
+- sebuah data yang di kirim ke client untuk menjaga agar tidak ada attribut privacy yang terkirim
+- manipulasi request dan response agar sesuai dengan kebutuhan client
+- menjaga keamanan data,karena DTO itu bersifat immutability(tidak dapat di ubah)
+
+client(frontend) <------ api -----> backend(server)
+
+
+response example :
+
+shopeee
+
+search "buket bunga"
+
+data {
+    foto,
+    nama,
+    harga  
+} data yang benar2 di butuhkan client 
+
+product ---- di petakan ----> data
+
+
+product {
+    id
+    name
+    url_image(link gambar)
+    harga
+    stock
+    category
+    description
+} data yang benar2 ada di database
+
+request example :
+user{
+    id
+    nama
+    kelas
+    daerah
+    no hp *
+    email
+    password *
+} data yang ada di databasenya
+
+feature : login {
+    email
+    password
+} request kebuthan data untuk login
+
+
+login(user) ---> request login DTO ------> backend
+login(user) <--- response login DTO <------ backend
+
+request login {
+    email
+    password
+    virus
+}
+
+
+DTO request Login{
+    email
+    password
+}
+
+DTO response login{
+    id
+    nama
+    kelas
+    email
+    token
+}
+
+
+
+email : 
+
+password :
+
+
+data ------> 
+
+
+{
+    email : ""
+    password : ""
+    virus : ""
+}
+
+
+form 
