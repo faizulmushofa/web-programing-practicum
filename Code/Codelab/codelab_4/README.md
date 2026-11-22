@@ -1,4 +1,7 @@
-# CODELAB-4-WEB — REST API Peminjaman Buku Perpustakaan
+# Codelab 4 — REST API Peminjaman Buku Perpustakaan (Laravel)
+
+> **Sumber**: Codelab ini merupakan pengerjaan dari starter project resmi asisten laboratorium.
+> Repo asli: [nisrinan/CODELAB-4-WEB](https://github.com/nisrinan/CODELAB-4-WEB)
 
 Repository ini berisi starter project REST API sistem perpustakaan menggunakan Laravel. Tugas codelab ini adalah melengkapi kemampuan API agar anggota perpustakaan (Member) dapat meminjam dan mengembalikan buku (Book) melalui endpoint yang disediakan.
 

@@ -1,5 +1,8 @@
 # 📚 Modul 3: Sistem Perpustakaan Sederhana (OOP PHP)
 
+> **Sumber**: Codelab ini merupakan pengerjaan dari starter project resmi asisten laboratorium.
+> Repo asli: [ShofwanAlifUMM/library-system-md3](https://github.com/ShofwanAlifUMM/library-system-md3)
+
 Latihan praktikum ini dirancang untuk mengasah pemahaman mengenai konsep dasar **Object-Oriented Programming (OOP)** pada PHP, khususnya:
 1. **Class & Object**: Pembuatan dan instansiasi class.
 2. **Encapsulation & Visibility**: Penggunaan access modifier (`private` dan `public`).
