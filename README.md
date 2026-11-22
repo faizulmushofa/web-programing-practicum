@@ -13,8 +13,6 @@
 * **Author / Developer**: [Faizul Mushofa](https://github.com/faizulmushofa)
 * **Repository URL**: `https://github.com/faizulmushofa/web-programing-practicum.git`
 * **One Line Description**: Monorepo komprehensif perjalanan praktikum Pemrograman Web semester 5 yang mencakup arsip modul teori laboratorium, implementasi tugas codelab terstruktur, serta proyek demonstrasi mandiri yang terus berkembang sepanjang semester.
-* **Problem Statement**: Selama satu semester perkuliahan praktikum web, materi berkembang secara berkala dari dasar frontend, styling modern, interaktivitas DOM/API, hingga topik lanjutan. Tanpa repositori terpusat dan dokumentasi modular per modul, riwayat kode sering kali tercecer dan sulit dipelajari ulang.
-* **Target Users**: Praktikan, asisten laboratorium, dosen pengampu, serta pembaca umum yang membutuhkan studi kasus praktikum web terstruktur dari dasar hingga advanced.
 
 ---
 
@@ -22,101 +20,86 @@
 * 📚 **Centralized Module Repository**: Arsip lengkap buku panduan praktikum resmi PDF di folder `Materi/` sebagai acuan standar kompetensi tiap modul.
 * 🧪 **Hands-on Codelab Tasks**: Implementasi tugas codelab tiap modul yang terdokumentasi mandiri dengan panduan, instalasi, dan arsitektur spesifik per folder.
 * 🚀 **Interactive Demo Applications**: Demonstrasi aplikasi web mandiri untuk mengeksplorasi eksperimen fitur, UI/UX modern, dan studi kasus praktikal.
-* 🌐 **Real-world API & Data Handling**: Eksplorasi komunikasi data eksternal, penanganan asinkron, dan integrasi layanan web.
-* 📁 **Modular Documentation Architecture**: Setiap sub-proyek memiliki `README.md` independen dengan detail tech stack, arsitektur, dan cara menjalankan masing-masing.
+* 🔗 **Referensi Repo Asisten**: Setiap codelab dilengkapi link ke repo starter resmi dari asisten laboratorium.
 
 ---
 
 ## 📑 [MODULE & DIRECTORY MATRIX]
 
-Seluruh tugas dan materi saling terhubung sesuai dengan silabus praktikum semester 5:
-
-| Modul | Topik Pokok Bahasan | Kategori | Folder Kode / Sumber | Dokumentasi Khusus | Status |
-| :---: | :--- | :---: | :--- | :---: | :---: |
-| **Modul 1** | Fundamental HTML, CSS, Layouting, Tailwind CSS Engine | Materi | [`Materi/Modul_1_WEB.pdf`](Materi/Modul_1_WEB.pdf) | - | ✅ Arsip |
-| **Modul 1** | Modern Dark-Mode Landing Page & Vector Icons | Demo | [`Code/Demo/Demo1/`](Code/Demo/Demo1) | [📄 README Demo 1](Code/Demo/Demo1/README.md) | ✅ Selesai |
-| **Modul 2** | JavaScript ES6+, DOM Manipulation, Async/Await, REST API | Materi | [`Materi/Modul_2_WEB.pdf`](Materi/Modul_2_WEB.pdf) | - | ✅ Arsip |
-| **Modul 2** | Multi-Page Web Portfolio, Custom Toast, & PokeAPI Explorer | Codelab | [`Code/Codelab/codelab_2/`](Code/Codelab/codelab_2) | [📄 README Codelab 2](Code/Codelab/codelab_2/README.md) | ✅ Selesai |
-| **Modul 3+** | Modul Praktikum Lanjutan (Backend / Framework / Fullstack) | Codelab / Demo | *Menunggu jadwal praktikum* | - | ⏳ Segera |
+| Modul | Topik | Kategori | Folder / Link | Starter Repo (Referensi) | Status |
+| :---: | :--- | :---: | :--- | :--- | :---: |
+| **Modul 1** | Fundamental HTML, CSS, Tailwind CSS v4 | Materi | [`Materi/Modul_1_WEB.pdf`](Materi/Modul_1_WEB.pdf) | — | ✅ Arsip |
+| **Modul 1** | HTML Semantik + Tailwind CSS — Tema Modern Blue | Codelab | [`Code/Codelab/codelab_1/`](Code/Codelab/codelab_1) | — | ✅ Selesai |
+| **Modul 1** | FlipPlay Landing Page (Dark Theme) | Demo | [`Code/Demo/Demo1/`](Code/Demo/Demo1) | — | ✅ Selesai |
+| **Modul 2** | JavaScript ES6+, DOM, Async/Await, REST API | Materi | [`Materi/Modul_2_WEB.pdf`](Materi/Modul_2_WEB.pdf) | — | ✅ Arsip |
+| **Modul 2** | Multi-Page Portfolio + PokeAPI Explorer | Codelab | [`Code/Codelab/codelab_2/`](Code/Codelab/codelab_2) | — | ✅ Selesai |
+| **Modul 2** | FlipPlay + Tailwind + Vanilla JS | Demo | [`Code/Demo/Demo2/`](Code/Demo/Demo2) | — | ✅ Selesai |
+| **Modul 3** | OOP PHP — Class, Encapsulation, Relasi Objek | Materi | [`Materi/Modul_3_WEB.pdf`](Materi/Modul_3_WEB.pdf) | — | ✅ Arsip |
+| **Modul 3** | Sistem Perpustakaan Sederhana (OOP PHP) | Codelab | [`Code/Codelab/codelab_3/`](Code/Codelab/codelab_3) | [⭐ ShofwanAlifUMM/library-system-md3](https://github.com/ShofwanAlifUMM/library-system-md3) | ✅ Selesai |
+| **Modul 3** | FlipPlay PHP Backend + Frontend | Demo | [`Code/Demo/Demo3/`](Code/Demo/Demo3) | — | ✅ Selesai |
+| **Modul 4** | Laravel, Eloquent ORM, REST API | Materi | [`Materi/Modul_4_WEB.pdf`](Materi/Modul_4_WEB.pdf) | — | ✅ Arsip |
+| **Modul 4** | REST API Perpustakaan (Laravel) | Codelab | [`Code/Codelab/codelab_4/`](Code/Codelab/codelab_4) | [⭐ nisrinan/CODELAB-4-WEB](https://github.com/nisrinan/CODELAB-4-WEB) | ✅ Selesai |
+| **Modul 4** | FlipPlay Laravel + Inertia + React | Demo | [`Code/Demo/Demo4/`](Code/Demo/Demo4) | — | ✅ Selesai |
+| **Modul 5** | *(Menunggu jadwal praktikum)* | — | — | — | ⏳ Segera |
+| **Modul 6** | *(Menunggu jadwal praktikum)* | — | — | — | ⏳ Segera |
 
 ---
 
 ## 🏗️ [ARCHITECTURE]
 
-### Monorepo Structure Overview
-
-```
-                                  ┌───────────────────────────┐
-                                  │      Root Workspace       │
-                                  │   (Praktikum Web Sem 5)   │
-                                  └─────────────┬─────────────┘
-                                                │
-                       ┌────────────────────────┴────────────────────────┐
-                       ▼                                                 ▼
-            ┌─────────────────────┐                           ┌─────────────────────┐
-            │   Materi/ (Buku)    │                           │    Code/ (Proyek)   │
-            │  - Modul 1 PDF      │                           │  - Codelab Tasks    │
-            │  - Modul 2 PDF      │                           │  - Demo Projects    │
-            └─────────────────────┘                           └──────────┬──────────┘
-                                                                         │
-                                                ┌────────────────────────┴────────────────────────┐
-                                                ▼                                                 ▼
-                                     ┌─────────────────────┐                           ┌─────────────────────┐
-                                     │  Codelab/codelab_2  │                           │     Demo/Demo1      │
-                                     │  (PokeAPI + DOM)    │                           │  (FlipPlay Landing) │
-                                     └─────────────────────┘                           └─────────────────────┘
-```
-
----
-
-## 📁 [PROJECT STRUCTURE]
-
-Berikut adalah struktur hirarki direktori monorepo praktikum web:
-
 ```
 Pemrograman_Web/Lab/
-├── README.md                      # Dokumentasi induk praktikum (file ini)
-├── Materi/                        # Dokumen modul acuan laboratorium
-│   ├── Modul_1_WEB.pdf            # Modul 1: Dasar HTML, CSS, & Layouting
-│   └── Modul_2_WEB.pdf            # Modul 2: JavaScript Modern, DOM, Async & API
-└── Code/                          # Seluruh implementasi kode tugas & demonstrasi
-    ├── Codelab/                   # Direktori penugasan terstruktur Codelab
-    │   └── codelab_2/             # Codelab Modul 2: Web Portfolio & PokeAPI
-    │       ├── README.md          # 📄 Dokumentasi lengkap Codelab 2
-    │       ├── package.json       # Konfigurasi dependensi build
-    │       ├── dist/              # Direktori output CSS terkompilasi
-    │       └── src/               # Kode sumber aplikasi multi-page
-    │           ├── index.html     # Halaman beranda utama
-    │           ├── pages/         # Sub-halaman (about, contact, pokemon)
-    │           ├── scripts/       # Script JavaScript ES6+ & Fetch handler
-    │           └── styles/        # File stylesheet input Tailwind v4
-    └── Demo/                      # Direktori demonstrasi proyek mandiri
-        └── Demo1/                 # Demo Modul 1/2: FlipPlay Entertainment Portal
-            ├── README.md          # 📄 Dokumentasi lengkap Demo 1
-            ├── package.json       # Konfigurasi build Tailwind CLI
-            └── src/               # Kode sumber landing page FlipPlay
-                ├── index.html     # Halaman landing page dark-theme
-                ├── css/           # Input CSS & Theme tokens
-                ├── js/            # Inisialisasi ikon Lucide
-                └── dist/          # Output CSS terkompilasi
+├── README.md
+├── Materi/                        # PDF modul resmi laboratorium
+│   ├── Modul_1_WEB.pdf
+│   ├── Modul_2_WEB.pdf
+│   ├── Modul_3_WEB.pdf
+│   ├── Modul_4_WEB.pdf
+│   ├── Modul_5_WEB.pdf
+│   └── Modul_6_WEB.pdf
+└── Code/
+    ├── Codelab/                   # Tugas codelab per modul
+    │   ├── codelab_1/             # Modul 1 — HTML Semantik + Tailwind Modern Blue
+    │   ├── codelab_2/             # Modul 2 — Portfolio + PokeAPI
+    │   ├── codelab_3/             # Modul 3 — OOP PHP Library System
+    │   └── codelab_4/             # Modul 4 — Laravel REST API Perpustakaan
+    └── Demo/                      # Demonstrasi proyek mandiri
+        ├── Demo1/                 # FlipPlay — Dark Theme Landing Page
+        ├── Demo2/                 # FlipPlay — Tailwind + Vanilla JS
+        ├── Demo3/                 # FlipPlay — PHP Backend + Frontend
+        └── Demo4/                 # FlipPlay — Laravel + Inertia + React
 ```
 
 ---
 
-## 📝 [KEY LEARNINGS & HIGHLIGHTS]
+## 🔗 [REFERENSI STARTER REPO]
 
-* **Transisi ke Tailwind CSS v4**: Penerapan directive `@theme` langsung dalam file CSS untuk deklarasi token warna custom tanpa memerlukan file `tailwind.config.js`.
-* **Asynchronous Execution Pattern**: Penerapan kombinasi `async/await` dan `Promise.all()` untuk menangani batch request data secara efisien tanpa membuat browser UI freeze.
-* **Component-Oriented Vanilla JS**: Pemanfaatan *closure* dan *factory function* untuk menciptakan komponen UI yang dapat dipakai ulang (seperti custom Toast Notification) tanpa memerlukan library external.
+Codelab modul 3 dan 4 menggunakan starter project dari asisten laboratorium. Repo berikut adalah sumber asli yang digunakan sebagai bahan pengerjaan:
+
+| Modul | Topik | Repo Asisten |
+| :---: | :--- | :--- |
+| Modul 3 | OOP PHP — Sistem Perpustakaan | [ShofwanAlifUMM/library-system-md3](https://github.com/ShofwanAlifUMM/library-system-md3) |
+| Modul 4 | Laravel REST API — Perpustakaan | [nisrinan/CODELAB-4-WEB](https://github.com/nisrinan/CODELAB-4-WEB) |
+
+---
+
+## 📝 [KEY LEARNINGS]
+
+* **Tailwind CSS v4**: Directive `@theme` untuk token warna custom tanpa `tailwind.config.js`.
+* **OOP PHP**: Class, encapsulation, getter/setter, relasi antar objek (Association/Dependency).
+* **Asynchronous JS**: `async/await` + `Promise.all()` untuk batch request efisien.
+* **Laravel Eloquent**: Relasi `belongsTo`/`hasMany`, API Resource, Form Request validation.
+* **Inertia.js v3**: SPA tanpa kompleksitas — server-side routing + client-side rendering.
 
 ---
 
 ## 🗺️ [SEMESTER ROADMAP]
-- [x] **Modul 1**: Dasar Web, Semantic HTML5, CSS Layouting, & Pengenalan Tailwind CSS.
-- [x] **Modul 2**: JavaScript Modern (ES6+), DOM Manipulation, Event Handling, & REST API Fetch.
-- [ ] **Modul 3**: Penyusunan Komponen Dinamis & Form Processing Tingkat Lanjut.
-- [ ] **Modul 4**: State Management & Client-Side Routing.
-- [ ] **Modul 5**: Integrasi Backend & Fullstack Architecture.
+- [x] **Modul 1**: Semantic HTML5, CSS Layouting, Tailwind CSS v4.
+- [x] **Modul 2**: JavaScript ES6+, DOM Manipulation, REST API Fetch.
+- [x] **Modul 3**: OOP PHP — Class, Encapsulation, Relasi Objek.
+- [x] **Modul 4**: Laravel, Eloquent ORM, REST API.
+- [ ] **Modul 5**: *(Menunggu jadwal praktikum)*
+- [ ] **Modul 6**: *(Menunggu jadwal praktikum)*
 
 ---
 
