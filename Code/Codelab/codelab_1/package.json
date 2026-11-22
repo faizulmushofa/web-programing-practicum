@@ -1,0 +1,12 @@
+{
+  "name": "codelab_1",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./src/main.css -o ./dist/output.css",
+    "watch": "npx @tailwindcss/cli -i ./src/main.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}

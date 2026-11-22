@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlipPlay - Codelab 1</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+
+<body class="font-poppins bg-background text-text">
+
+    <!-- Navbar -->
+    <header class="bg-primary text-white px-6 py-4 relative">
+        <nav class="flex justify-between items-center max-w-6xl mx-auto">
+            <h1 class="text-xl font-bold">FlipPlay</h1>
+            <button id="menu-toggle" class="md:hidden flex flex-col gap-1">
+                <span class="block w-6 h-0.5 bg-white"></span>
+                <span class="block w-6 h-0.5 bg-white"></span>
+                <span class="block w-6 h-0.5 bg-white"></span>
+            </button>
+            <ul id="nav-menu" class="hidden md:flex gap-6">
+                <li><a href="#home" class="font-bold underline">Home</a></li>
+                <li><a href="#about" class="hover:underline">About</a></li>
+                <li><a href="#content" class="hover:underline">Content</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Mobile menu -->
+        <ul id="mobile-menu" class="hidden flex-col gap-4 mt-4 md:hidden">
+            <li><a href="#home" class="font-bold underline">Home</a></li>
+            <li><a href="#about" class="hover:underline">About</a></li>
+            <li><a href="#content" class="hover:underline">Content</a></li>
+            <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-background text-center py-24 px-6">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 text-text">
+            Selamat Datang di <span class="text-primary">FlipPlay</span>
+        </h1>
+        <p class="mb-8 text-muted text-lg max-w-xl mx-auto">
+            Nikmati anime, drama, manga, dan light novel dalam satu platform hiburan digital modern.
+        </p>
+        <a href="#content"
+            class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-dark transition-colors font-semibold">
+            Jelajahi Sekarang
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="px-6 py-12 max-w-3xl mx-auto text-center">
+        <h2 class="text-2xl font-bold mb-4">Tentang FlipPlay</h2>
+        <p class="text-muted leading-relaxed">
+            FlipPlay adalah platform hiburan digital generasi baru yang mengintegrasikan layanan streaming video
+            dan digital reading ke dalam satu aplikasi web. Kami menghadirkan pengalaman menonton dan membaca
+            yang terpadu, mudah diakses, dan menyenangkan untuk semua kalangan.
+        </p>
+    </section>
+
+    <!-- Card / Content Section -->
+    <section id="content" class="grid grid-cols-1 md:grid-cols-3 gap-6 px-10 py-10 max-w-6xl mx-auto">
+
+        <div class="bg-surface rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <img src="./assets/images/anime.jpeg" alt="Anime" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">Anime</h3>
+                <p class="text-muted leading-relaxed">
+                    Saksikan koleksi anime terlengkap dari berbagai genre — aksi, romansa, fantasi, hingga slice of life.
+                    Tersedia subtitle Indonesia dan kualitas HD untuk pengalaman menonton terbaik.
+                </p>
+            </div>
+        </div>
+
+        <div class="bg-surface rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <img src="./assets/images/manga.jpeg" alt="Manga" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">Manga</h3>
+                <p class="text-muted leading-relaxed">
+                    Baca ribuan judul manga langsung di browser tanpa perlu mengunduh aplikasi tambahan.
+                    Tampilan reader yang nyaman dengan mode gelap dan pengaturan ukuran halaman.
+                </p>
+            </div>
+        </div>
+
+        <div class="bg-surface rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <img src="./assets/images/novel.jpeg" alt="Light Novel" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-bold text-primary mb-3">Light Novel</h3>
+                <p class="text-muted leading-relaxed">
+                    Selami kisah-kisah seru dari light novel populer Jepang yang telah diterjemahkan ke Bahasa Indonesia.
+                    Simpan progres bacaan dan lanjutkan kapan saja di perangkat apapun.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="px-6 py-12">
+        <h2 class="text-2xl font-bold text-center mb-6">Hubungi Kami</h2>
+        <form id="contact-form" class="bg-surface p-6 rounded-xl shadow max-w-md mx-auto hover:shadow-lg transition-shadow">
+            <div class="mb-4">
+                <input id="input-nama" type="text" placeholder="Nama Lengkap"
+                    class="border border-gray-300 p-3 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                <p id="error-nama" class="hidden text-red-500 text-sm mt-1">Nama tidak boleh kosong.</p>
+            </div>
+            <div class="mb-4">
+                <input id="input-email" type="email" placeholder="Email"
+                    class="border border-gray-300 p-3 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+            </div>
+            <div class="mb-4">
+                <textarea id="input-pesan" placeholder="Pesan" rows="4"
+                    class="border border-gray-300 p-3 w-full rounded-lg focus:outline-none focus:ring-2 focus:ring-primary resize-none"></textarea>
+            </div>
+            <button type="submit"
+                class="bg-primary hover:bg-primary-dark text-white rounded-lg w-full py-3 font-semibold transition-colors">
+                Kirim Pesan
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-footer text-white text-center py-6">
+        <p class="font-semibold">FlipPlay</p>
+        <p class="text-sm text-gray-400 mt-1">&copy; 2026 FlipPlay. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        });
+
+        // Basic form validation
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const nama = document.getElementById('input-nama');
+            const errorNama = document.getElementById('error-nama');
+            if (!nama.value.trim()) {
+                errorNama.classList.remove('hidden');
+            } else {
+                errorNama.classList.add('hidden');
+                alert('Pesan berhasil dikirim!');
+                this.reset();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
