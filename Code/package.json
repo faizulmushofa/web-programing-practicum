@@ -1,0 +1,19 @@
+{
+  "name": "lab-web-code",
+  "private": true,
+  "scripts": {
+    "build": "pnpm run build:codelab2 && pnpm run build:demo1 && pnpm run build:demo2 && pnpm run build:demo3",
+    "build:codelab2": "tailwindcss -i ./Codelab/codelab_2/src/styles/main.css -o ./Codelab/codelab_2/dist/output.css",
+    "build:demo1": "tailwindcss -i ./Demo/Demo1/src/css/input.css -o ./Demo/Demo1/src/dist/output.css",
+    "build:demo2": "tailwindcss -i ./Demo/Demo2/src/css/input.css -o ./Demo/Demo2/src/dist/output.css",
+    "build:demo3": "tailwindcss -i ./Demo/Demo3/apps/frontend/css/input.css -o ./Demo/Demo3/apps/frontend/dist/output.css",
+    "dev:codelab2": "tailwindcss -i ./Codelab/codelab_2/src/styles/main.css -o ./Codelab/codelab_2/dist/output.css --watch",
+    "dev:demo1": "tailwindcss -i ./Demo/Demo1/src/css/input.css -o ./Demo/Demo1/src/dist/output.css --watch",
+    "dev:demo2": "tailwindcss -i ./Demo/Demo2/src/css/input.css -o ./Demo/Demo2/src/dist/output.css --watch",
+    "dev:demo3": "tailwindcss -i ./Demo/Demo3/apps/frontend/css/input.css -o ./Demo/Demo3/apps/frontend/dist/output.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.4",
+    "tailwindcss": "^4.3.4"
+  }
+}
