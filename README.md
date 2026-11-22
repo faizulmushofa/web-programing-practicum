@@ -12,6 +12,7 @@
 * **Mata Kuliah**: Praktikum Pemrograman Web (Semester 5)
 * **Author / Developer**: [Faizul Mushofa](https://github.com/faizulmushofa)
 * **Repository URL**: `https://github.com/faizulmushofa/web-programing-practicum.git`
+* **Related Classroom Repo**: [`faizulmushofa/Praktik_Web`](https://github.com/faizulmushofa/Praktik_Web) — repositori latihan dan materi praktikum teori di kelas
 * **One Line Description**: Monorepo komprehensif perjalanan praktikum Pemrograman Web semester 5 yang mencakup arsip modul teori laboratorium, implementasi tugas codelab terstruktur, serta proyek demonstrasi mandiri yang terus berkembang sepanjang semester.
 
 ---
@@ -76,6 +77,8 @@ Codelab modul 3 dan 4 menggunakan starter project dari asisten laboratorium. Rep
 | :---: | :--- | :--- |
 | Modul 3 | OOP PHP — Sistem Perpustakaan | [ShofwanAlifUMM/library-system-md3](https://github.com/ShofwanAlifUMM/library-system-md3) |
 | Modul 4 | Laravel REST API — Perpustakaan | [nisrinan/CODELAB-4-WEB](https://github.com/nisrinan/CODELAB-4-WEB) |
+
+> 🔗 **Repositori Terkait Perkuliahan**: Latihan, tugas, dan studi kasus yang dikerjakan saat sesi tatap muka kelas dapat diakses pada repositori [**`faizulmushofa/Praktik_Web`**](https://github.com/faizulmushofa/Praktik_Web).
 
 ---
 
