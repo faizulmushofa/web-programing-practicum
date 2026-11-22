@@ -2,6 +2,8 @@
 
 RESTful API backend untuk platform katalog media FlipPlay yang dibangun menggunakan **Laravel 12** dan **PostgreSQL**. Proyek ini merupakan kelanjutan dari simulasi OOP pada Modul 3, mengimplementasikan konsep Eloquent ORM, Many-to-Many Relationship, Form Request Validation, API Resource, dan Custom Controller Action.
 
+> 📖 **Catatan Teori & Praktikum:** Untuk penjelasan mendalam mengenai arsitektur, konvensi penamaan Eloquent, DTO/Resource, dan tips konfigurasi environment, silakan baca [Catatan Pengerjaan (notes.md)](./notes.md).
+
 ---
 
 ## 🛠️ Tech Stack & Requirements
