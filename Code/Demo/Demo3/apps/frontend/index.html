@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-background">
+
+    <!--Header Navigation-->
+    <header class="bg-surface">
+        <nav class="relative flex items-center justify-between py-4 px-4 text-text">
+            <a href="#hero" class="flex items-center gap-2">
+                <img src="./images/logo.jpeg" alt="Flip Play logo" class="w-8 h-8 object-cover rounded-2xl">
+                <span>Flip Play</span>
+            </a>
+
+            <button
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                class="md:hidden p-2 hover:text-card"
+            >
+                <i data-lucide="menu"></i>
+            </button>
+
+            <div
+                id="mobile-menu"
+                class="hidden absolute left-0 right-0 top-full z-10 bg-surface px-4 pb-4 md:static md:flex md:items-center md:gap-8 md:bg-transparent md:p-0"
+            >
+                <ul class="flex flex-col gap-4 md:flex-row">
+                    <li><a href="#hero" class="hover:text-card">Home</a></li>
+                    <li><a href="#discover-more" class="hover:text-card">Discover</a></li>
+                    <li><a href="#contact" class="hover:text-card">Contact</a></li>
+                </ul>
+
+                <div class="mt-4 flex gap-2 md:mt-0">
+                    <button class="px-3 py-2 bg-card text-background hover:bg-background hover:text-white">Sign in</button>
+                    <button class="border px-5 py-2 hover:bg-card hover:text-background">Register</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Hero-->
+    <section id="hero" class="max-w-6xl mx-auto text-white md:mt-20 mt-5 px-6 py-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        <div class="space-y-4">
+            <p class="ml-4 text-sm-uppercase tracking-wider">
+                Streaming & Reading Redefined
+            </p>
+            <h1  class=" ml-4 text-4xl md:text-5xl font-bold text-white leading-tight">YOUR STORIES</h1>
+            <h1 class="ml-4 text-4xl md:text-5xl font-bold text-white leading-tight">ONE PLACE.</h1>
+            <p class="ml-4 text-gray-300 text-base">
+                Anime,drama,manga, and light novels - all in one seamless entertainment <br>
+            experience unified tracking,reading, and 4K playback
+            </p>
+            <div class="pt-2 ml-4 mb-2">
+                <button class="hover:bg-card hover:text-background border border-white/30 py-1 px-10 flex items-center gap-1">
+                <i data-lucide="circle-play"></i>
+                <a href="#discover-more">Discover More</a>
+            </button>
+        </div>    
+        </div>
+
+        <div class="h-full w-full min-h-[420px]">
+            
+            <iframe class="w-full h-full overflow-hidden min-h-[420px] " 
+           src="https://www.youtube.com/embed/6hnHn44sRbk?si=JKyaqqkQPJxuhnAi&amp;start=24"
+           title="YouTube video player"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+           
+        </div>
+    </section>
+
+    <section id="discover-more" class="max-w-6xl mx-auto text-white mt-12 px-6">
+        <h2 class="text-4xl font-bold text-center">The Vibe Grid</h2>
+        <p class="mt-2 text-center text-gray-400">Find your next story by title or aura.</p>
+        <div class="mt-6 flex flex-col gap-3 md:flex-row">
+            <input id="search-input" type="search" placeholder="Search anime..." class="flex-1 bg-transparent border border-white/20 px-4 py-3 outline-none focus:border-card">
+            <div id="aura-buttons" class="flex flex-wrap gap-2">
+                <button data-aura="all" class="aura-button border border-white/30 px-4 py-2">All</button>
+                <button data-aura="high-rated" class="aura-button border border-white/30 px-4 py-2">Top Rated</button>
+                <button data-aura="movies" class="aura-button border border-white/30 px-4 py-2">Movies</button>
+                <button data-aura="ongoing" class="aura-button border border-white/30 px-4 py-2">Currently Airing</button>
+            </div>
+        </div>
+        <div id="loading" class="mt-8 flex justify-center text-gray-400" aria-label="Loading">
+            <i data-lucide="loader-circle" class="h-8 w-8 animate-spin"></i>
+        </div>
+        <p id="error-message" class="hidden mt-8 text-center text-red-400"></p>
+        <div id="media-grid" class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4"></div>
+        <div id="pagination" class="mt-8 flex justify-center gap-3"></div>
+    </section>
+
+    <section id="contact" class="max-w-6xl mx-auto text-white mt-12 px-6 py-10">
+        <h2 class="md:text-4xl text-5xl font-bold text-2xl px-2 mb-6 flex justify-center items-center">Contact Us</h2>
+
+        <div class="p-6">
+        <form class="max-w-2xl mx-auto space-y-4">
+            <div>
+                <label for="name" class="block mb-1">Name</label>
+                <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
+                    class="w-full bg-transparent border border-white/20 px-3 py-2 outline-none focus:border-card"
+                    placeholder="Your name"
+                >
+            </div>
+
+            <div>
+                <label for="email" class="block mb-1">Email</label>
+                <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    class="w-full bg-transparent border border-white/20 px-3 py-2 outline-none focus:border-card"
+                    placeholder="you@example.com"
+                >
+            </div>
+
+            <div>
+                <label for="message" class="block mb-1">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    class="w-full bg-transparent border border-white/20 px-3 py-2 outline-none focus:border-card"
+                    placeholder="Write your message"
+                ></textarea>
+            </div>
+
+            <button
+                type="submit"
+                class="border border-white/30 mb-4 px-8 py-2 hover:bg-card hover:text-background transition"
+            >
+                Send Message
+            </button>
+        </form>
+        </div>
+    </section>
+
+    <footer class="max-w-6xl mx-auto text-white mt-12 border-t border-white/20 px-6 py-8">
+        <div class="flex flex-col md:flex-row justify-between gap-6">
+            <div>
+                <h2 class="text-xl font-bold">Flip Play</h2>
+                <p class="mt-2 text-gray-400">Your stories, one place.</p>
+            </div>
+
+            <nav class="flex gap-4 text-gray-300">
+                <a href="#hero" class="hover:text-white">Home</a>
+                <a href="#discover-more" class="hover:text-white">Discover</a>
+                <a href="#contact" class="hover:text-white">Contact</a>
+            </nav>
+        </div>
+
+        <div class="mt-6 border-t pt-4 text-sm text-gray-400">
+            &copy; 2026 Flip Play. All rights reserved.
+        </div>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+
+</html>
