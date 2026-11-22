@@ -26,22 +26,18 @@
 
 ## 📑 [MODULE & DIRECTORY MATRIX]
 
-| Modul | Topik | Kategori | Folder / Link | Status |
-| :---: | :--- | :---: | :--- | :---: |
-| **Modul 1** | Fundamental HTML, CSS, Tailwind CSS v4 | Materi | [`Materi/Modul_1_WEB.pdf`](Materi/Modul_1_WEB.pdf) | ✅ Arsip |
-| **Modul 1** | HTML Semantik + Tailwind CSS — Tema Modern Blue | Codelab | [`Code/Codelab/codelab_1/`](Code/Codelab/codelab_1) | ✅ Selesai |
-| **Modul 1** | FlipPlay Landing Page (Dark Theme) | Demo | [`Code/Demo/Demo1/`](Code/Demo/Demo1) | ✅ Selesai |
-| **Modul 2** | JavaScript ES6+, DOM, Async/Await, REST API | Materi | [`Materi/Modul_2_WEB.pdf`](Materi/Modul_2_WEB.pdf) | ✅ Arsip |
-| **Modul 2** | Multi-Page Portfolio + PokeAPI Explorer | Codelab | [`Code/Codelab/codelab_2/`](Code/Codelab/codelab_2) | ✅ Selesai |
-| **Modul 2** | FlipPlay + Tailwind + Vanilla JS | Demo | [`Code/Demo/Demo2/`](Code/Demo/Demo2) | ✅ Selesai |
-| **Modul 3** | OOP PHP — Class, Encapsulation, Relasi Objek | Materi | [`Materi/Modul_3_WEB.pdf`](Materi/Modul_3_WEB.pdf) | ✅ Arsip |
-| **Modul 3** | Sistem Perpustakaan Sederhana (OOP PHP) | Codelab | [`Code/Codelab/codelab_3/`](Code/Codelab/codelab_3) | ✅ Selesai |
-| **Modul 3** | FlipPlay PHP Backend + Frontend | Demo | [`Code/Demo/Demo3/`](Code/Demo/Demo3) | ✅ Selesai |
-| **Modul 4** | Laravel, Eloquent ORM, REST API | Materi | [`Materi/Modul_4_WEB.pdf`](Materi/Modul_4_WEB.pdf) | ✅ Arsip |
-| **Modul 4** | REST API Perpustakaan (Laravel) | Codelab | [`Code/Codelab/codelab_4/`](Code/Codelab/codelab_4) | ✅ Selesai |
-| **Modul 4** | FlipPlay Laravel + Inertia + React | Demo | [`Code/Demo/Demo4/`](Code/Demo/Demo4) | ✅ Selesai |
-| **Modul 5** | *(Menunggu jadwal praktikum)* | — | — | ⏳ Segera |
-| **Modul 6** | *(Menunggu jadwal praktikum)* | — | — | ⏳ Segera |
+Seluruh materi, tugas codelab, dan implementasi demo disusun modular per modul:
+
+| Modul | Topik Utama | Materi (PDF) | Tugas Codelab | Proyek Demo | Status |
+| :---: | :--- | :---: | :--- | :--- | :---: |
+| **01** | **Modern Web Fundamentals**<br>HTML5 Semantik, CSS Layouting, Tailwind CSS v4 Engine | [`Modul 1`](Materi/Modul_1_WEB.pdf) | [`codelab_1`](Code/Codelab/codelab_1)<br><sub>Landing page — Tema Modern Blue</sub> | [`Demo1`](Code/Demo/Demo1)<br><sub>FlipPlay — Dark Theme Landing Page</sub> | ✅ Selesai |
+| **02** | **JavaScript & REST API**<br>ES6+, DOM Manipulation, Event Handling, Async/Await | [`Modul 2`](Materi/Modul_2_WEB.pdf) | [`codelab_2`](Code/Codelab/codelab_2)<br><sub>Portfolio Web + PokeAPI Explorer</sub> | [`Demo2`](Code/Demo/Demo2)<br><sub>FlipPlay — Vanilla JS + Tailwind</sub> | ✅ Selesai |
+| **03** | **Object-Oriented PHP**<br>Class, Encapsulation, State Method, Object Association | [`Modul 3`](Materi/Modul_3_WEB.pdf) | [`codelab_3`](Code/Codelab/codelab_3)<br><sub>Sistem Perpustakaan OOP PHP</sub> | [`Demo3`](Code/Demo/Demo3)<br><sub>FlipPlay — Native PHP Backend + UI</sub> | ✅ Selesai |
+| **04** | **Laravel Framework & REST API**<br>Eloquent ORM, Relationship, Form Request, API Resource | [`Modul 4`](Materi/Modul_4_WEB.pdf) | [`codelab_4`](Code/Codelab/codelab_4)<br><sub>REST API Perpustakaan (Laravel 11)</sub> | [`Demo4`](Code/Demo/Demo4)<br><sub>FlipPlay — Laravel + Inertia + React</sub> | ✅ Selesai |
+| **05** | *Topik Lanjutan Modul 5* | [`Modul 5`](Materi/Modul_5_WEB.pdf) | *Menunggu jadwal* | *Menunggu jadwal* | ⏳ Segera |
+| **06** | *Topik Lanjutan Modul 6* | [`Modul 6`](Materi/Modul_6_WEB.pdf) | *Menunggu jadwal* | *Menunggu jadwal* | ⏳ Segera |
+
+> 💡 **Catatan Codelab 3 & 4**: Merupakan penyelesaian tugas dari starter repository resmi asisten lab. Detail repositori asal dicantumkan di README masing-masing folder ([`codelab_3`](Code/Codelab/codelab_3#readme) & [`codelab_4`](Code/Codelab/codelab_4#readme)).
 
 ---
 
