@@ -13,91 +13,197 @@
 
     <!--Header Navigation-->
     <header class="bg-surface">
-        <nav class="flex justify-between items-center py-4 text-text mr-3 ml-3">
-            <div class="flex gap-1 items-center ">
-                <a href="">
-                    <img src="./images/logo.jpeg" alt="logo-image" class="w-8 h-8 object-cover rounded-2xl ">
-                </a>
-                <p>Flip Play</p>
-            </div>
+        <nav class="relative flex items-center justify-between py-4 px-4 text-text">
+            <a href="#hero" class="flex items-center gap-2">
+                <img src="./images/logo.jpeg" alt="Flip Play logo" class="w-8 h-8 object-cover rounded-2xl">
+                <span>Flip Play</span>
+            </a>
 
-            <ul class="flex gap-4">
-                <a href="#hero" class=" hover:text-card">Home</a>
-                <a href="#watch-read" class=" hover:text-card">Discover</a>
-                <a href="#features" class=" hover:text-card">Features</a>
-                <a href="#categories" class=" hover:text-card">Categories</a>
-            </ul>
+            <button
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                class="md:hidden p-2 hover:text-card"
+            >
+                <i data-lucide="menu"></i>
+            </button>
 
-            <div class="flex items-center gap-2">
-                <button
-                    class="rounded-lg px-3 py-2 bg-card border border-transparent text-background hover:border-white hover:text-white hover:bg-background">Sign
-                    in</button>
-                <button
-                    class="border rounded-lg px-5 py-2 hover:border-transparent hover:bg-card hover:text-background hover:text-background">Explore</button>
-                <a href="">
-                    <i data-lucide="circle-user"></i>
-                </a>
+            <div
+                id="mobile-menu"
+                class="hidden absolute left-0 right-0 top-full z-10 bg-surface px-4 pb-4 md:static md:flex md:items-center md:gap-8 md:bg-transparent md:p-0"
+            >
+                <ul class="flex flex-col gap-4 md:flex-row">
+                    <li><a href="#hero" class="hover:text-card">Home</a></li>
+                    <li><a href="#discover-more" class="hover:text-card">Discover</a></li>
+                    <li><a href="#contact" class="hover:text-card">Contact</a></li>
+                </ul>
+
+                <div class="mt-4 flex gap-2 md:mt-0">
+                    <button class="px-3 py-2 bg-card text-background hover:bg-background hover:text-white">Sign in</button>
+                    <button class="border px-5 py-2 hover:bg-card hover:text-background">Register</button>
+                </div>
             </div>
         </nav>
     </header>
 
     <!--Hero-->
-    <section id="hero" class="text-white mt-20 flex flex-col justify-center items-center gap-2">
-        <div>
-            Streaming & Reading Redefined
-        </div>
-        <div class="text-6xl font-bold text-center ">
-            <h1>YOUR STORIES.</h1>
-            <h1>ONE PLACE.</h1>
-        </div>
-        <div class="text-center">
-            Anime,drama,manga, and light novels - all in one seamless entertainment <br>
+    <section id="hero" class="max-w-6xl mx-auto text-white md:mt-20 mt-5 px-6 py-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        <div class="space-y-4">
+            <p class="ml-4 text-sm-uppercase tracking-wider">
+                Streaming & Reading Redefined
+            </p>
+            <h1  class=" ml-4 text-4xl md:text-5xl font-bold text-white leading-tight">YOUR STORIES</h1>
+            <h1 class="ml-4 text-4xl md:text-5xl font-bold text-white leading-tight">ONE PLACE.</h1>
+            <p class="ml-4 text-gray-300 text-base">
+                Anime,drama,manga, and light novels - all in one seamless entertainment <br>
             experience unified tracking,reading, and 4K playback
-        </div>
-        <div class="flex justify-center items-center gap-2 mt-1">
-            <button class="border rounded-lg py-1 px-1 flex items-center gap-1">
-                Explore FlipPlay
-                <i data-lucide="arrow-right"></i>
-            </button>
-            <button class="rounded-lg border py-1 px-2 flex items-center gap-1">
+            </p>
+            <div class="pt-2 ml-4 mb-2">
+                <button class="hover:bg-card hover:text-background border border-white/30 py-1 px-10 flex items-center gap-1">
                 <i data-lucide="circle-play"></i>
-                Discover More
+                <a href="#discover-more">Discover More</a>
             </button>
+        </div>    
         </div>
-        <div>
+
+        <div class="h-full w-full min-h-[420px]">
             
+            <iframe class="w-full h-full overflow-hidden min-h-[420px] " 
+           src="https://www.youtube.com/embed/6hnHn44sRbk?si=JKyaqqkQPJxuhnAi&amp;start=24"
+           title="YouTube video player"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+           
+        </div>
+    </section>
+
+    <section id="discover-more" class="max-w-6xl mx-auto text-white md:mt-15 mt-8">
+        <h2 class="md:text-5xl text-4xl px-2 py m-2 mb-4 font-bold flex justify-center items-center">
+            Discover More
+        </h2>
+        <!-- content -->
+        <div class="grid md:grid-cols-4 grid-cols-2 gap-2 ml-2 mr-2">
+        <a href="#anime" class="group relative h-[360px] md:h-[420px] overflow-hidden">
+            <img
+                src="images/anime.jpeg"
+                alt="Anime"
+                class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
+            >
+            <div class="absolute inset-0 bg-black/50 transition group-hover:bg-black/30"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+                <h3 class="text-xl font-bold">Anime</h3>
+                <p class="text-sm">Watch anime series</p>
+            </div>
+        </a>
+        <a href="#korean-drama" class="group relative h-[360px] md:h-[420px] overflow-hidden">
+            <img src="images/drakor.jpeg" 
+            alt="Korean Drama"
+            class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
+            >
+            <div class="absolute inset-0 bg-black/50 transition group-hover:bg-black/30"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+                <h3 class="text-xl font-bold">Drama Korean</h3>
+                <p class="text-sm">Watch Drama Series</p>
+            </div>
+        </a>
+        
+        <a href="#manga" class="group relative h-[360px]  md:h-[420px] overflow-hidden">
+            <img src="images/manga.jpeg" 
+            alt="Korean Drama"
+            class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
+            >
+            <div class="absolute inset-0 bg-black/50 transition group-hover:bg-black/30"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+                <h3 class="text-xl font-bold">Manga</h3>
+                <p class="text-sm">Read Manga Series</p>
+            </div>
+        </a>
+        <a href="#korean-drama" class="group relative h-[360px] md:h-[420px] overflow-hidden">
+            <img src="images/drakor.jpeg" 
+            alt="Korean Drama"
+            class="absolute inset-0 h-full w-full object-cover transition duration-300 group-hover:scale-110"
+            >
+            <div class="absolute inset-0 bg-black/50 transition group-hover:bg-black/30"></div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+                <h3 class="text-xl font-bold">Light Novel</h3>
+                <p class="text-sm">Read Light Novel Series</p>
+            </div>
+        </a>
+        
+    </section>
+
+    <section id="contact" class="max-w-6xl mx-auto text-white mt-12 px-6 py-10">
+        <h2 class="md:text-4xl text-5xl font-bold text-2xl px-2 mb-6 flex justify-center items-center">Contact Us</h2>
+
+        <div class="p-6">
+        <form class="max-w-2xl mx-auto space-y-4">
+            <div>
+                <label for="name" class="block mb-1">Name</label>
+                <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
+                    class="w-full bg-transparent border border-white/20 px-3 py-2 outline-none focus:border-card"
+                    placeholder="Your name"
+                >
+            </div>
+
+            <div>
+                <label for="email" class="block mb-1">Email</label>
+                <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    class="w-full bg-transparent border border-white/20 px-3 py-2 outline-none focus:border-card"
+                    placeholder="you@example.com"
+                >
+            </div>
+
+            <div>
+                <label for="message" class="block mb-1">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    class="w-full bg-transparent border border-white/20 px-3 py-2 outline-none focus:border-card"
+                    placeholder="Write your message"
+                ></textarea>
+            </div>
+
+            <button
+                type="submit"
+                class="border border-white/30 mb-4 px-8 py-2 hover:bg-card hover:text-background transition"
+            >
+                Send Message
+            </button>
+        </form>
+        </div>
+    </section>
+
+    <footer class="max-w-6xl mx-auto text-white mt-12 border-t border-white/20 px-6 py-8">
+        <div class="flex flex-col md:flex-row justify-between gap-6">
+            <div>
+                <h2 class="text-xl font-bold">Flip Play</h2>
+                <p class="mt-2 text-gray-400">Your stories, one place.</p>
+            </div>
+
+            <nav class="flex gap-4 text-gray-300">
+                <a href="#hero" class="hover:text-white">Home</a>
+                <a href="#discover-more" class="hover:text-white">Discover</a>
+                <a href="#contact" class="hover:text-white">Contact</a>
+            </nav>
         </div>
 
-    </section>
-
-    <!--Categories-->
-    <section id="categories">
-
-    </section>
-
-    <!--Watch Read-->
-    <section id="watch-read">
-
-    </section>
-
-    <!--Trending-->
-    <section id="trending">
-
-    </section>
-
-    <!--features-->
-    <section id="features">
-
-    </section>
-
-
-    <!--CTA-->
-    <section id="cta">
-
-    </section>
-
-    <footer>
-
+        <div class="mt-6 border-t pt-4 text-sm text-gray-400">
+            &copy; 2026 Flip Play. All rights reserved.
+        </div>
     </footer>
 </body>
 <script src="js/script.js"></script>
